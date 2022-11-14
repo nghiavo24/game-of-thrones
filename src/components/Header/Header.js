@@ -7,10 +7,10 @@ const Header = ({getHousesDetails}) => {
         <div className='main-header'>
             <Link to='/'><div className="first-header">Game of Thrones</div></Link>
             <div className='nav-bar'>
-                <Link to='/houses' ><div onClick={getHousesDetails} className="nav-btn">Houses</div></Link>
+                <Link to='/houses' ><div className="nav-btn">Houses</div></Link>
                 <Link to='/characters' ><div className="nav-btn">Characters</div></Link>
-                <div className="nav-btn">Episodes</div>
-                <div className="nav-btn">About</div>
+                <Link to='/episodes' ><div className="nav-btn">Episodes</div></Link>
+                <Link to='/about' ><div className="nav-btn">About</div></Link>
                 <div className="nav-btn">Search</div>
             </div>
         </div>
