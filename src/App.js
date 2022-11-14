@@ -1,7 +1,8 @@
 import './App.css';
 import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header/Header';
-import Navbar from './components/Navbar/Navbar'
+import Houses from './components/Houses/Houses'
 import axios from 'axios';
 
 const App = () => {
@@ -19,9 +20,12 @@ const[housesDetails, setHousesDetails] = useState([])
   
   return (
     <div>
-      <Header />
-      <Navbar />
-    </div>
+      
+    <Routes>
+      <Route path='/' element={<Header getHousesDetails={getHousesDetails} />}/>      
+      <Route path='/houses' element={<Houses housesDetails={housesDetails} />} />
+   </Routes> 
+   </div>
   );
 }
 
