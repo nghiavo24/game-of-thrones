@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Houses from './components/Houses/Houses'
 import Characters from './components/Characters/Characters';
 import About from './components/About/About';
+import Episodes from './components/Episodes/Episodes';
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
       <Route path='/houses' element={<Houses />} />
       <Route path='/characters' element={<Characters />} />
       <Route path='/about' element={<About />} />
+      <Route path='/episodes' element={<Episodes />} />
    </Routes> 
    </div>
   );

@@ -1,0 +1,10 @@
+.main-container-episode{
+    padding: 3px;
+}
+.episode-container{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    max-width: fit-content;
+    padding: 5px
+}
