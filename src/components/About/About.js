@@ -12,7 +12,7 @@ const About = () =>{
         .then(res => setAboutTheShow(res.data))
     }, [])
     
-    console.log(aboutTheShow)
+    // console.log(aboutTheShow)
 
     if(aboutTheShow.image) // conditional rendering
 

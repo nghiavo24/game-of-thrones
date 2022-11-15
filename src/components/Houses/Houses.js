@@ -15,7 +15,7 @@ const Houses = () =>{
             setHousesDetails(res.data))
     }, [])
     
-console.log(housesDetails)
+// console.log(housesDetails)
 
     let housesList = housesDetails.map((house, index) => {
         return(
