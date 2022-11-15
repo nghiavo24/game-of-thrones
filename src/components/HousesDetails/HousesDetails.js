@@ -7,7 +7,7 @@ import './HousesDetails.css'
 const HousesDetails = () => {
    const {houseName} = useParams();
    const [indepthHouseDetail, setIndepthHouseDetail] = useState([])
-    let theHouseName = houseName.charAt(0).toUpperCase(0) + houseName.slice(1)
+    // let theHouseName = houseName.charAt(0).toUpperCase(0) + houseName.slice(1)
 
     useEffect (() =>{
         axios
@@ -16,7 +16,7 @@ const HousesDetails = () => {
     }, [])
 
    let housesIndepth = indepthHouseDetail.filter((element) => 
-   {return element.name === theHouseName})
+   {return element.name === houseName})
 
     let renderedHouses = housesIndepth.map((item, index) =>{
         return(
