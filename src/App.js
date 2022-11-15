@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header/Header';
 import Houses from './components/Houses/Houses'
 import Characters from './components/Characters/Characters';
-import axios from 'axios';
+import About from './components/About/About';
 
 const App = () => {
 
@@ -16,6 +16,7 @@ const App = () => {
       <Route path='/' element={<Header />}/>      
       <Route path='/houses' element={<Houses />} />
       <Route path='/characters' element={<Characters />} />
+      <Route path='/about' element={<About />} />
    </Routes> 
    </div>
   );

@@ -13,10 +13,9 @@ const Characters = () => {
             setCharactersDetails(res.data))
     }, [])
     
-    console.log(charactersDetails)
-    let charList = charactersDetails.map((char) => {
+    let charList = charactersDetails.map((char, index) => {
         return(
-            <div>
+            <div key={index}>
                 <h2>{char.name}</h2>
             </div>
         )

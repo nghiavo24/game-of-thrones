@@ -13,9 +13,11 @@ const Houses = () =>{
             setHousesDetails(res.data))
     }, [])
     
-    let housesList = housesDetails.map((house) => {
+    console.log(housesDetails)
+
+    let housesList = housesDetails.map((house, index) => {
         return(
-            <div>
+            <div key={index}>
                 <h2>{house.name}</h2>
             </div>
         )
