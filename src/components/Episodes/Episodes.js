@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 import Header from "../Header/Header";
 import './Episodes.css'
 
-
-
 const Episodes = () => {
     const[getEpisodes, setGetEpisodes] = useState([]);
 
@@ -13,8 +11,6 @@ const Episodes = () => {
         .get('https://api.tvmaze.com/shows/82/episodes')
         .then(res => setGetEpisodes(res.data))
     }, [])
-
-    console.log(getEpisodes)
 
     let listOfEpisodes = getEpisodes.map((episode, index) => {
         return(
