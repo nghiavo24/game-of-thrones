@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 import Header from "../Header/Header";
 import axios from "axios";
 import './Houses.css'
@@ -19,10 +20,12 @@ console.log(housesDetails)
     let housesList = housesDetails.map((house, index) => {
         return(
             <div className="houses-container" key={index}>
+                <Link to={'/houses/' + house.slug} >
                 <div className="indi-house-container">
                 <img src={require(`./images/${house.slug}.svg`)} className="house-img"></img>
                 <h2>{house.name}</h2>
                 </div>
+                </Link>
             </div>
         )
     })
