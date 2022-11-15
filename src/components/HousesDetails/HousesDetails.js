@@ -3,11 +3,9 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import './HousesDetails.css'
 
-
 const HousesDetails = () => {
    const {houseName} = useParams();
    const [indepthHouseDetail, setIndepthHouseDetail] = useState([])
-    // let theHouseName = houseName.charAt(0).toUpperCase(0) + houseName.slice(1)
 
     useEffect (() =>{
         axios
@@ -31,11 +29,8 @@ const HousesDetails = () => {
             </div>
         )
     })
-
     return(
-        <div>
-            {renderedHouses}
-        </div>
+        <div>{renderedHouses}</div>
     )
 }
 
