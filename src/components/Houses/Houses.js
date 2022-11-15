@@ -13,9 +13,12 @@ const Houses = () =>{
             setHousesDetails(res.data))
     }, [])
     
+console.log(housesDetails)
+
     let housesList = housesDetails.map((house, index) => {
         return(
             <div key={index}>
+                <img src={require(`./images/${house.slug}.svg`)} className="house-img"></img>
                 <h2>{house.name}</h2>
             </div>
         )
