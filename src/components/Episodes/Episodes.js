@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Header from "../Header/Header";
-import './Episodes.css'
+import './Episodes.css';
+import {format} from 'date-fns'
 
 const Episodes = () => {
     const[getEpisodes, setGetEpisodes] = useState([]);
@@ -16,9 +16,9 @@ const Episodes = () => {
         return(
             <div className='main-container-episode' key={`${episode.id}_{episode.name}`}>
                 <div className='episode-container'>
-                    <h2>Season {episode.season}</h2>
-                    <h3>{episode.name}</h3>
-                    <h4>Airdate: {episode.airdate}</h4>
+                    <h2>Season {episode.season}, Episode {episode.number}</h2>
+                    <a href={episode.url} ><h3>{episode.name}</h3></a>
+                    <h5>(Click the link above to see more details)</h5>
                     <img src={episode.image.medium} className='episode-image'></img>
                 </div>
             </div>
@@ -26,7 +26,7 @@ const Episodes = () => {
         )
     })
     return(
-        <div>
+        <div className="episode-body-container">
             {listOfEpisodes}
         </div>
     )
