@@ -32,7 +32,6 @@ console.log(housesDetails)
 
     return(
         <div>
-        <div><Header /></div>
         <div className="houses-list">{housesList}</div>
         </div>
     )

@@ -27,7 +27,6 @@ const Episodes = () => {
     })
     return(
         <div>
-            <Header />
             {listOfEpisodes}
         </div>
     )

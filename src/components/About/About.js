@@ -18,7 +18,6 @@ const About = () =>{
 
     return(
         <div>
-        <Header />
             <div>
                 <img style={{ width: '60vw', height: '60vh'}} src={aboutTheShow.image.original}></img>
                 <h1>{aboutTheShow.name}</h1>

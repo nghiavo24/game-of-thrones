@@ -22,7 +22,6 @@ const Characters = () => {
     })
     return(
         <div>
-        <Header />
             <div>{charList}</div>
         </div>
     )

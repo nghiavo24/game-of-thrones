@@ -1,11 +1,10 @@
 import React from "react";
 import './Header.css'
-import { Link } from 'react-router-dom'
 
-const Header = ({getHousesDetails}) => {
+const Header = () => {
     return(
-        <div className='main-header'>
-            <Link to='/'><div className="first-header">Game of Thrones</div></Link>
+        <div>
+            {/* <Link to='/'><div className="first-header">Game of Thrones</div></Link>
             <div className='nav-bar'>
                 <Link to='/about' ><div className="nav-btn">About</div></Link>
                 <Link to='/characters' ><div className="nav-btn">Characters</div></Link>
@@ -13,7 +12,7 @@ const Header = ({getHousesDetails}) => {
                 <Link to='/houses' ><div className="nav-btn">Houses</div></Link>
                 
                 <div className="nav-btn">Search</div>
-            </div>
+            </div> */}
         </div>
     )
 }
