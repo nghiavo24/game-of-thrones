@@ -18,8 +18,6 @@ const HousesDetails = () => {
    let housesIndepth = indepthHouseDetail.filter((element) => 
    {return element.name === theHouseName})
 
-    console.log(housesIndepth)
-
     let renderedHouses = housesIndepth.map((item, index) =>{
         return(
             <div key="index">
@@ -29,12 +27,10 @@ const HousesDetails = () => {
                 <div>Location: {item.region}</div>
                 <div>City: {item.seat}</div>
                 <div>Sigil: {item.sigil}</div>
-
-
+                <div>Words: {item.words}</div>
             </div>
         )
     })
-
 
     return(
         <div>
