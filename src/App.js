@@ -20,7 +20,7 @@ const App = () => {
                 <Link to='/episodes' ><div className="nav-btn">Episodes</div></Link>
                 <Link to='/houses' ><div className="nav-btn">Houses</div></Link>
                 
-                <div className="nav-btn">Search</div>
+                <div className="nav-btn">Quotes</div>
             </div>
         </div>
       </nav>
