@@ -17,7 +17,7 @@ const Characters = () => {
         return(
             <div className='char-main-container' key={index}>
                 <div className='char-container'>
-                <img src={char.character.image.medium} ></img>
+                <img src={char.character.image.medium} alt='' ></img>
                 <a href={char.character.url}><h2>{char.character.name}</h2></a>
                 </div>
             </div>

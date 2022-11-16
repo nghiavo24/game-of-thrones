@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Header from "../Header/Header";
 import axios from "axios";
 
 const About = () =>{
@@ -19,7 +18,7 @@ const About = () =>{
     return(
         <div>
             <div>
-                <img style={{ width: '60vw', height: '60vh'}} src={aboutTheShow.image.original}></img>
+                <img style={{ width: '60vw', height: '60vh'}} src={aboutTheShow.image.original} alt=''></img>
                 <h1>{aboutTheShow.name}</h1>
                 <h4>Summary: {aboutTheShow.summary}</h4>
                 <h4>Premiered: {aboutTheShow.premiered}</h4>

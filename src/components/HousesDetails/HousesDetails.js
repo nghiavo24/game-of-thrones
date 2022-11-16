@@ -19,7 +19,7 @@ const HousesDetails = () => {
     let renderedHouses = housesIndepth.map((item, index) =>{
         return(
             <div key="index">
-                <img src={require(`./images/${houseName}.svg`)} className="house-detail-img"></img>
+                <img src={require(`./images/${houseName}.svg`)} alt='' className="house-detail-img"></img>
                 <div>House {item.name}</div>
                 <div>Founder: {item.founder}</div>
                 <div>Location: {item.region}</div>

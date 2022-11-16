@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import './Episodes.css';
-import {format} from 'date-fns'
 
 const Episodes = () => {
     const[getEpisodes, setGetEpisodes] = useState([]);
@@ -19,7 +18,7 @@ const Episodes = () => {
                     <h2>Season {episode.season}, Episode {episode.number}</h2>
                     <a href={episode.url} ><h3>{episode.name}</h3></a>
                     <h5>(Click the link above to see more details)</h5>
-                    <img src={episode.image.medium} className='episode-image'></img>
+                    <img src={episode.image.medium} alt='' className='episode-image'></img>
                 </div>
             </div>
             

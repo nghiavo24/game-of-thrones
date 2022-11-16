@@ -19,7 +19,7 @@ const Houses = () =>{
             <div className="houses-container" key={index}>
                 <Link to={'/houses/' + house.name} >
                 <div className="indi-house-container">
-                <img src={require(`./images/${house.name}.svg`)} className="house-img"></img>
+                <img src={require(`./images/${house.name}.svg`)} alt='' className="house-img"></img>
                 <h2>House {house.name}</h2>
                 </div>
                 </Link>
