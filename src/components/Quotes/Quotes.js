@@ -26,10 +26,9 @@ const Quotes = () => {
         <div>
             <button onClick={handleClick}>Get Random Quote</button>
             <div className='random-quote-container'>
-                <img alt=''></img>
+                <img src={require(`./images/${randomQuote.character.slug}.webp`)} alt=''></img>
                 <h3>'{randomQuote.sentence}'</h3>
-                <h4>by {randomQuote.character.name}</h4>
-                
+                <h4>by {randomQuote.character.name} - {randomQuote.character.house.name}</h4>
             </div>
         </div>
     )
