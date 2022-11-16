@@ -15,7 +15,7 @@ const CommentBox = () => {
     return(
         <div className="comment-box">
             <h2>Join the Discussion!</h2>
-            <CommentForm />
+            
         </div>
     )
 }
