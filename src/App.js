@@ -6,6 +6,7 @@ import Characters from './components/Characters/Characters';
 import About from './components/About/About';
 import Episodes from './components/Episodes/Episodes';
 import HousesDetails from './components/HousesDetails/HousesDetails';
+import Quotes from './components/Quotes/Quotes';
 
 const App = () => {
 
@@ -19,8 +20,7 @@ const App = () => {
                 <Link to='/characters' ><div className="nav-btn">Characters</div></Link>
                 <Link to='/episodes' ><div className="nav-btn">Episodes</div></Link>
                 <Link to='/houses' ><div className="nav-btn">Houses</div></Link>
-                
-                <div className="nav-btn">Quotes</div>
+                <Link to='/quotes' ><div className="nav-btn">Quotes</div></Link>
             </div>
         </div>
       </nav>
@@ -31,6 +31,7 @@ const App = () => {
       <Route path='/about' element={<About />} />
       <Route path='/episodes' element={<Episodes />} />
       <Route path='/houses/:houseName' element={<HousesDetails />} />
+      
    </Routes> 
    </div>
   );
