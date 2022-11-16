@@ -1,21 +1,24 @@
-import React, { useState } from "react";
-
-
+import React, {useState} from "react";
 
 const CommentBox = () => {
-    const[showComments, SetShowComments] = useState(false)
-    const[comments, SetComments] = useState([
-        {id: 1, author: "landiggity", body: "This is my first comment on this forum so don't be a dick"},
-        {id: 2, author: "scarlett-jo", body: "That's a mighty fine comment you've got there my good looking fellow..."},
-        {id: 3, author: "rosco", body: "What is the meaning of all of this 'React' mumbo-jumbo?"}
-    ]
-    )
+const [comment, setComment] = useState("");
 
+const handleChange = (e) => {
+    setComment(e.target.value);
+};
 
     return(
-        <div className="comment-box">
-            <h2>Join the Discussion!</h2>
-            
+        <div className="main-container">
+            <div className="comment-container" >{comment}</div>
+            <div className="comment-flexbox">
+            <h3 >Comment</h3>
+            <textarea 
+            value={comment}
+            onChange={handleChange}
+            className="input-box"
+            />
+            <button className="comment-button">Submit</button>
+            </div>
         </div>
     )
 }
