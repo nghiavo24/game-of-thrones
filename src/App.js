@@ -7,6 +7,7 @@ import About from './components/About/About';
 import Episodes from './components/Episodes/Episodes';
 import HousesDetails from './components/HousesDetails/HousesDetails';
 import Quotes from './components/Quotes/Quotes';
+import CommentBox from './components/CommentBox/CommentBox';
 
 const App = () => {
 
@@ -21,6 +22,7 @@ const App = () => {
                 <Link to='/episodes' ><div className="nav-btn">Episodes</div></Link>
                 <Link to='/houses' ><div className="nav-btn">Houses</div></Link>
                 <Link to='/quotes' ><div className="nav-btn">Quotes</div></Link>
+                <Link to='/comments' ><div className="nav-btn">Comment</div></Link>
             </div>
         </div>
       </nav>
@@ -32,6 +34,7 @@ const App = () => {
       <Route path='/episodes' element={<Episodes />} />
       <Route path='/houses/:houseName' element={<HousesDetails />} />
       <Route path='/quotes' element={<Quotes />} ></Route>
+      <Route path='/comments' element={<CommentBox />} ></Route>
    </Routes> 
    </div>
   );
