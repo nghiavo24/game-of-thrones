@@ -2,7 +2,9 @@ import React, {useState} from "react";
 
 const CommentBox = () => {
 const [comment, setComment] = useState("");
-const [listOfComments, setListOfComments] = useState([])
+const [listOfComments, setListOfComments] = useState([]);
+const [commentAuthor, setCommentAuthor] = useState("");
+const [listOfCommentAuthors, setListOfCommentAuthors] = useState([])
 
 const handleChange = (e) => {
     setComment(e.target.value);
