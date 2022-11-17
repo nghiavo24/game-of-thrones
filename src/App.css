@@ -1,0 +1,19 @@
+.first-header{
+    text-align: center;
+    font-size: 2em;
+    background-color: #141414;
+    color: white;
+    padding: 1em;
+}
+.nav-btn{
+    padding: 15px;
+}
+.nav-bar{
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    background-color: pink;
+    color: white;
+    padding: 1em;
+    display: flex;                  
+}
