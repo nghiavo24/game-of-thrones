@@ -7,8 +7,11 @@ import Episodes from './components/Episodes/Episodes';
 import HousesDetails from './components/HousesDetails/HousesDetails';
 import Quotes from './components/Quotes/Quotes';
 import CommentBox from './components/CommentBox/CommentBox';
+import Subscribe from './components/Subscribe/Subscribe';
+import { useState } from 'react';
 
 const App = () => {
+  const[openWindow, setOpenWindow] = useState(false);
 
   return (
     <div>
@@ -22,6 +25,7 @@ const App = () => {
                 <Link to='/houses' ><div className="nav-btn">Houses</div></Link>
                 <Link to='/quotes' ><div className="nav-btn">Quotes</div></Link>
                 <Link to='/comments' ><div className="nav-btn">Comment</div></Link>
+                <Link to='/subscribe' ><div className="nav-btn">Subscribe</div></Link>
             </div>
         </div>
       </nav>
@@ -33,6 +37,7 @@ const App = () => {
       <Route path='/houses/:houseName' element={<HousesDetails />} />
       <Route path='/quotes' element={<Quotes />} ></Route>
       <Route path='/comments' element={<CommentBox />} ></Route>
+      <Route path='/subscribe' element={<Subscribe openWindow={openWindow} setOpenWindow={setOpenWindow} />} ></Route>
    </Routes> 
    </div>
   );
