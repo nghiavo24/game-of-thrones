@@ -28,7 +28,7 @@ const App = () => {
             </div>
             <button 
             onClick={() => {
-              setOpenWindow(true);
+              setOpenWindow(!openWindow);
             }}
             className='open-subscribe-window'>
             Subscribe
