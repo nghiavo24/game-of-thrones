@@ -25,9 +25,17 @@ const App = () => {
                 <Link to='/houses' ><div className="nav-btn">Houses</div></Link>
                 <Link to='/quotes' ><div className="nav-btn">Quotes</div></Link>
                 <Link to='/comments' ><div className="nav-btn">Comment</div></Link>
-                <Link to='/subscribe' ><div className="nav-btn">Subscribe</div></Link>
             </div>
+            <button 
+            onClick={() => {
+              setOpenWindow(true);
+            }}
+            className='open-subscribe-window'>
+            Subscribe
+            </button>
+            {openWindow && <Subscribe openWindow={openWindow} setOpenWindow={setOpenWindow} />}
         </div>
+        
       </nav>
     <Routes>
       <Route path='/houses' element={<Houses />} />
@@ -37,7 +45,6 @@ const App = () => {
       <Route path='/houses/:houseName' element={<HousesDetails />} />
       <Route path='/quotes' element={<Quotes />} ></Route>
       <Route path='/comments' element={<CommentBox />} ></Route>
-      <Route path='/subscribe' element={<Subscribe openWindow={openWindow} setOpenWindow={setOpenWindow} />} ></Route>
    </Routes> 
    </div>
   );
