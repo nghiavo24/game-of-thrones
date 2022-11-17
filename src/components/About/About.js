@@ -21,14 +21,21 @@ const About = () =>{
         className='about-page-container'>
             <div className='about-content'>
                 <img className='poster-img' src={aboutTheShow.image.original} alt=''></img>
-                <h1>{aboutTheShow.name}</h1>
-                <h4 className="about-summary">Summary: {summary}</h4>
-                <h4>Premiered: {aboutTheShow.premiered}</h4>
-                <h4>Ended: {aboutTheShow.ended}</h4>
-                <h4>Official Site: {aboutTheShow.officialSite}</h4>
-                <h4>Genres: {aboutTheShow.genres[0]}, {aboutTheShow.genres[1]}, {aboutTheShow.genres[2]}</h4>
-                <h4>Language: {aboutTheShow.language}</h4>
-                <h4>Rating: {aboutTheShow.rating.average}/10</h4>
+                <div className="show-name">{aboutTheShow.name}</div>
+                <div className="about-sub-heading">Summary</div>
+                <div className="sub-heading-content" id="about-summary">{summary}</div>
+                <div className="about-sub-heading">Premiered</div>
+                <div className="sub-heading-content">{aboutTheShow.premiered}</div>
+                <div className="about-sub-heading">Ended</div>
+                <div className="sub-heading-content">{aboutTheShow.ended}</div>
+                <div className="about-sub-heading">Official Site</div>
+                <div className="sub-heading-content"><a href={aboutTheShow.officialSite}>{aboutTheShow.officialSite}</a></div>
+                <div className="about-sub-heading">Genres</div>
+                <div className="sub-heading-content">{aboutTheShow.genres[0]}, {aboutTheShow.genres[1]}, {aboutTheShow.genres[2]}</div>
+                <div className="about-sub-heading">Language</div>
+                <div className="sub-heading-content">{aboutTheShow.language}</div>
+                <div className="about-sub-heading">Rating</div>
+                <div className="sub-heading-content">{aboutTheShow.rating.average}/10</div>
             </div>
         </div>
     )
