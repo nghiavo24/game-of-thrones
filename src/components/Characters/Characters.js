@@ -9,24 +9,21 @@ const Characters = () => {
         const characterURL='https://api.tvmaze.com/shows/82/cast'
         axios
         .get(characterURL)
-        .then( res => setCharactersDetails(res.data))
+        .then(res => setCharactersDetails(res.data))
     }, [])
     
-    console.log (charactersDetails)
     let charList = charactersDetails.map((char, index) => {
         return(
             <div className='char-main-container' key={index}>
                 <div className='char-container'>
-                <img src={char.character.image.medium} alt='' ></img>
-                <a href={char.character.url}><h2>{char.character.name}</h2></a>
+                <img className='char-img' src={char.character.image.medium} alt='' ></img>
+                <a href={char.character.url}><h3>{char.character.name}</h3></a>
                 </div>
             </div>
         )
     })
     return(
-        <div>
-            <div>{charList}</div>
-        </div>
+        <div className='char-real-container'>{charList}</div>
     )
 }
 
