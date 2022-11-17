@@ -15,7 +15,7 @@ const Episodes = () => {
         return(
             <div className='main-container-episode' key={`${episode.id}_{episode.name}`}>
                 <div className='episode-container'>
-                    <h2>Season {episode.season}, Episode {episode.number}</h2>
+                    <h2>Season {episode.season} - Episode {episode.number}</h2>
                     <a href={episode.url} ><h3>{episode.name}</h3></a>
                     <h5>(Click the link above to see more details)</h5>
                     <img src={episode.image.medium} alt='' className='episode-image'></img>
@@ -25,9 +25,7 @@ const Episodes = () => {
         )
     })
     return(
-        <div className="episode-body-container">
-            {listOfEpisodes}
-        </div>
+        <div className="episode-body-container">{listOfEpisodes}</div>
     )
 }
 
