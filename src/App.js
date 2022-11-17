@@ -15,11 +15,11 @@ const App = () => {
   const[openWindow, setOpenWindow] = useState(false);
 
   return (
-    <div>
-      <nav>
-      <div className='main-header'>
-            <Link to='/'><div className="first-header">Game of Thrones</div></Link>
-            <div className='nav-bar'>
+    <div className='app-main-page'>
+      <div className='page-container'>
+        <Link to='/'><div className="first-header">Game of Thrones</div></Link>
+        <div className='navbar-container'>
+          <div className='navbar'>
                 <Link to='/about' ><div className="nav-btn">About</div></Link>
                 <Link to='/characters' ><div className="nav-btn">Characters</div></Link>
                 <Link to='/episodes' ><div className="nav-btn">Episodes</div></Link>
@@ -27,17 +27,14 @@ const App = () => {
                 <Link to='/quotes' ><div className="nav-btn">Quotes</div></Link>
                 <Link to='/comments' ><div className="nav-btn">Comment</div></Link>
             </div>
-            <button 
-            onClick={() => {
-              setOpenWindow(!openWindow);
-            }}
-            className='open-subscribe-window'>
-            Subscribe
-            </button>
-            {openWindow && <Subscribe openWindow={openWindow} setOpenWindow={setOpenWindow} />}
         </div>
+      </div>
+        <div className='subs-btn'>
+            <button onClick={() => {setOpenWindow(!openWindow);}} className='open-subscribe-window'>Subscribe</button>
+            {openWindow && <Subscribe openWindow={openWindow} setOpenWindow={setOpenWindow} />}
+            </div>  
         
-      </nav>
+      
     <Routes>
       <Route path='/houses' element={<Houses />} />
       <Route path='/characters' element={<Characters />} />

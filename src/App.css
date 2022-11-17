@@ -1,20 +1,48 @@
+.app-main-page{
+    font-family: 'Cinzel', serif;
+    max-width: 100vw;
+    height: 100vh;
+}
+.page-container{
+    width: fit-content;
+}
 .first-header{
+    position: relative;
+    left: 45%;
+    background-color: black;
+    color: white;
+    width: 40vw;
+    height: fit-content;
+    font-size: 3em;
     text-align: center;
-    font-size: 2em;
-    padding: 1em;
-    font-weight: bold;
+    border-radius: 20px;
+}
+.navbar-container{
+position: relative;
+left: 20%;
+padding: 20px;
+}
+.navbar{
+    display: flex;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    font-size: 2rem;
+    padding: 0.75em;
+    gap: 2em;
+    border-radius: 1.5em;
 }
 .nav-btn{
-    padding: 15px;
+    border: 2px solid whitesmoke;
+    padding: 0.25em;
+    border-radius: 0.5em;
 }
-.nav-bar{
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-    color: white;
-    padding: 1em;
-    display: flex;                  
+.nav-btn:hover{
+    background-color: white;
+    color: black;
 }
-.main-header{
-    font-family: 'Cinzel', serif;
+
+a:-webkit-any-link{
+    text-decoration: none;
+    color: inherit
 }
