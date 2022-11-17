@@ -2,14 +2,23 @@ import React, {useState} from "react";
 
 const CommentBox = () => {
 const [comment, setComment] = useState("");
+const [listOfComments, setListOfComments] = useState([])
 
 const handleChange = (e) => {
     setComment(e.target.value);
 };
 
+const handleClick = () => {
+    setListOfComments((listOfComments) => [...listOfComments, comment]);
+}
+
+
     return(
         <div className="main-container">
-            <div className="comment-container" >{comment}</div>
+            {listOfComments.map((text)=> (
+                <div className="comment-container" >{text}</div>
+            ))}
+            
             <div className="comment-flexbox">
             <h3 >Comment</h3>
             <textarea 
@@ -17,7 +26,7 @@ const handleChange = (e) => {
             onChange={handleChange}
             className="input-box"
             />
-            <button className="comment-button">Submit</button>
+            <button onClick={handleClick} className="comment-button">Submit</button>
             </div>
         </div>
     )
