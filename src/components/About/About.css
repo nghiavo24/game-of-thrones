@@ -1,0 +1,20 @@
+.about-page-container{
+    position: relative;
+    left: 2%;
+    max-width: 95vw;
+}
+.poster-img{
+    max-width: 80vw;
+    max-height: 80vh;
+    border-radius: 1em;
+}
+.about-content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-summary{
+    width: 70vw;
+}

@@ -9,8 +9,6 @@
 .first-header{
     position: relative;
     left: 45%;
-    background-color: black;
-    color: white;
     width: 40vw;
     height: fit-content;
     font-size: 3em;
@@ -24,16 +22,14 @@ padding: 20px;
 }
 .navbar{
     display: flex;
-    background-color: black;
-    color: white;
     width: fit-content;
     font-size: 2rem;
     padding: 0.75em;
     gap: 2em;
-    border-radius: 1.5em;
+    border-radius: 1em;
 }
 .nav-btn{
-    border: 2px solid whitesmoke;
+    border: 2px solid black;
     padding: 0.25em;
     border-radius: 0.5em;
 }
