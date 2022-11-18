@@ -1,5 +1,4 @@
-# Project Overview
-
+# Game of Thrones - Project Overview
 
 ## Project Description
 
@@ -33,17 +32,17 @@ The app is created for fans to search for related information about the show, su
 
 #### MVP (✅ completed)
 
-✅ AAU, I want to be able to browse any houses or characters. 
-✅ AAU, I want to be able to see the picture of any house or characters.
-✅ AAU, I want to be able to click on any house or characters and click on it to find out more details about it.
-✅ AAU, I want to be able to get a famous quote from any characters if available. 
+- [x] AAU, I want to be able to browse any houses or characters. 
+- [x] AAU, I want to be able to see the picture of any house or characters.
+- [x] AAU, I want to be able to click on any house or characters and click on it to find out more details about it.
+- [x] AAU, I want to be able to get a famous quote from any characters if available. 
 
 #### Post-MVP ( ❗- not completed, ✅ completed)
-❗Add a search component so they can find a specific house or character.
-❗Add OST as background music.
-❗Add a create new component so you can create your own house and characters with their famous quotes.
-✅ Added a comment component so users can post comment and interact with other users.
-✅ Added a subscribe component so users can register their email address to get monthly news.
+- [ ] Add a search component so they can find a specific house or character.
+- [ ] Add OST as background music.
+- [ ] Add a create new component so you can create your own house and characters with their famous quotes.
+- [x] Added a comment component so users can post comment and interact with other users.
+- [x] Added a subscribe component so users can register their email address to get monthly news.
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
@@ -88,18 +87,45 @@ The app is created for fans to search for related information about the show, su
 
 Conditional rendering - I am glad that I finally be able to understand a bit of it and ultilize this awesome function throughout my project.
 
-`{emailSend && <div className='email-container-sent'>
+```
+{emailSend && <div className='email-container-sent'>
             <img className='sent-email-img' src={received} style={{ height: '15vh'}}/>
             <h3>Email Received!</h3>
         </div>
 }
-`
+```
+
+v
+
+**ERROR**: Error: Each child in a list should have a unique key prop                              
+**RESOLUTION**: Add a unique key to your list components.
+
+**ERROR**: Error: Invalid hook call. Hooks can only be called inside of the body of a function component.                            
+**RESOLUTION**: Put the hook inside a React function.
+
+**ERROR**: TypeError: Cannot read property 'location' of undefined                             
+**RESOLUTION**: Most of the time are typos.
+
+## Additional resources:
+
+**Help with markdown language**
+https://www.markdownguide.org/extended-syntax/#task-lists
+**Color Palettes**
+https://coolors.co/palettes/trending
+**Pictures, wallpapers**
+https://wall.alphacoders.com/big.php?i=1260061
+**Font**
+https://fonts.google.com/about
+**Help with favicon***
+https://www.w3schools.com/html/html_favicon.asp
+**Style background picture**
+https://css-tricks.com/perfect-full-page-background-image/
+***Debugging help***
+https://react.school/debugging/errors
+***API resources***
+https://api.tvmaze.com/
+https://agotapi.herokuapp.com
+https://api.gameofthronesquotes.xyz/
 
 
-## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
-
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
 
