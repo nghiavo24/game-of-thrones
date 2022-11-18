@@ -18,19 +18,26 @@ const HousesDetails = () => {
 
     let renderedHouses = housesIndepth.map((item, index) =>{
         return(
-            <div key="index">
+            <div key="index" className='houses-detail-single-container'>
                 <img src={require(`./images/${houseName}.svg`)} alt='' className="house-detail-img"></img>
-                <div>House {item.name}</div>
-                <div>Founder: {item.founder}</div>
-                <div>Location: {item.region}</div>
-                <div>City: {item.seat}</div>
-                <div>Sigil: {item.sigil}</div>
-                <div>Words: {item.words}</div>
+                <div className="details">
+                    <div className='details-sub-heading'>House {item.name}</div>
+                    <div className='details-sub-heading'>Founder</div>
+                    <div className='details-sub-content'>{item.founder}</div>
+                    <div className='details-sub-heading'>Location</div>
+                    <div className='details-sub-content'>{item.region}</div>
+                    <div className='details-sub-heading'>City</div>
+                    <div className='details-sub-content'>{item.seat}</div>
+                    <div className='details-sub-heading'>Sigil</div>
+                    <div className='details-sub-content'>{item.sigil}</div>
+                    <div className='details-sub-heading'>Words:</div>
+                    <div className='details-sub-content'>{item.words}</div>
+                </div>
             </div>
         )
     })
     return(
-        <div>{renderedHouses}</div>
+        <div className='houses-detail-main-container'>{renderedHouses}</div>
     )
 }
 

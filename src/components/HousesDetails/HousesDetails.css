@@ -1,4 +1,23 @@
+.houses-detail-main-container{
+    padding: 0.5em;
+}
+.houses-detail-single-container{
+    display: flex;
+    flex-direction: row;
+}
 .house-detail-img{
     width: 50vw;
     height: 50vh;
+}
+.details{
+    text-align: center;
+    max-width: 40vw;
+}
+.details-sub-heading{
+    font-size: 3em;
+    color: #0A0908;
+}
+.details-sub-content{
+    font-size: 1.5em;
+    color: #22333B;
 }

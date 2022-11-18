@@ -9,7 +9,6 @@ import Quotes from './components/Quotes/Quotes';
 import CommentBox from './components/CommentBox/CommentBox';
 import Subscribe from './components/Subscribe/Subscribe';
 import { useState } from 'react';
-import backgroundImage from './images/main-background-img.jpeg'
 
 const App = () => {
   const[openWindow, setOpenWindow] = useState(false);
