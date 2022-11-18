@@ -7,7 +7,7 @@ The app is created for fans to search for related information about the show, su
 ## Project Links
 
 - [Github Repo](https://github.com/nghiavo24/game-of-thrones)
-- [Deployment Site]()
+- [Deployment Site](https://game-of-thrones-nu.vercel.app/)
 - [Demo Recording]()
 
 ## Wireframes & React Component Hierarchy
