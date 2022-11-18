@@ -10,12 +10,10 @@ const Quotes = () => {
     .get('https://api.gameofthronesquotes.xyz/v1/random')
     .then(res => setRandomQuote(res.data))
     }
-
     useEffect((onClick) =>{
         getRandomQuote()
     }, [])
     
-
     const handleClick = (event) =>{
         event.preventDefault();
         getRandomQuote();
@@ -23,12 +21,15 @@ const Quotes = () => {
     console.log(randomQuote)
     if(randomQuote)
     return(
-        <div>
-            <button onClick={handleClick}>Get Random Quote</button>
+        <div className='quote-container'>
+            <div>
+                <button className='random-quote-btn' onClick={handleClick}>Get Random Quote</button>
+            </div>
             <div className='random-quote-container'>
-                <img src={require(`./images/${randomQuote.character.slug}.webp`)} alt=''></img>
-                <h3>'{randomQuote.sentence}'</h3>
-                <h4>by {randomQuote.character.name} - {randomQuote.character.house.name}</h4>
+                <img className='quote-img' src={require(`./images/${randomQuote.character.slug}.webp`)} alt=''></img>
+                <div className='quote-content'>'{randomQuote.sentence}'</div>
+                <div className='quote-author-house'>{randomQuote.character.house.name}</div>
+                <div className='quote-author'>{randomQuote.character.name}</div>
             </div>
         </div>
     )

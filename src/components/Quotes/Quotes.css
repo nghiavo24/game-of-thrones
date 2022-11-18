@@ -1,0 +1,46 @@
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.random-quote-btn{
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 2em;
+    font-family: 'Cinzel', serif;
+    background-color: #EAE0D5;
+    width: fit-content;
+}
+.random-quote-btn:hover{
+    background-color: #0A0908;
+    color: #EAE0D5;
+    border: #0A0908;
+}
+.random-quote-container{
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 70vw;
+    text-align: center;
+    align-items: center;
+    color: #1d3557;
+    
+}
+.quote-img{
+    max-width: 45vw;
+    height: 45vh;
+    border-radius: 1em;
+}
+.quote-author{
+    font-size: 2em;
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+.quote-author-house{
+    font-size: 1.75em;
+    padding: 1em;
+}
+.quote-content{
+    font-size: 1.25em;
+    padding-bottom: 1em;
+}
