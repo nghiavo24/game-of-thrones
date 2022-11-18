@@ -16,7 +16,7 @@ const Houses = () =>{
     
     let housesList = housesDetails.map((house, index) => {
         return(
-            <div className="houses-container" key={index}>
+            <div className="indi-houses-container" key={index}>
                 <Link to={'/houses/' + house.name} >
                 <div className="indi-house-container">
                 <img src={require(`./images/${house.name}.svg`)} alt='' className="house-img"></img>
@@ -28,9 +28,7 @@ const Houses = () =>{
     })
 
     return(
-        <div>
         <div className="houses-list">{housesList}</div>
-        </div>
     )
 
 }

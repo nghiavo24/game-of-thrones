@@ -1,21 +1,24 @@
+.houses-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+.indi-houses-container{
+    padding: 0.5em;
+    border: 3px black solid;
+    max-width: fit-content;
+    text-align: center;
+    background-color: #ffe8d6;
+    color:#22333B;
+}
+
 .house-img {
-    width: 25vw;
+    width: 20vw;
     height: 25vh;
 }
-.houses-container{
-    border: 5px solid black;
-    width: fit-content;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-}
-.houses-list{
-    display: inline-flex;
-    flex-wrap: wrap;
-    width: 90vw;
-    padding: 30px;
-    gap: 15px;
-    /* align-items: stretch; */
-    /* justify-content: center; */
+.indi-houses-container:hover{
+    color: #C6AC8F;
 }
