@@ -9,14 +9,14 @@ const Subscribe = ({openWindow, setOpenWindow}) => {
 
     const sendEmail =() =>{
         setEmailSend(true);
-        setTimeout(() =>{ //set timer for Subscribe window to close after the use hit Send button
+        setTimeout(() =>{ //set timer for Subscribe window to close 3 seconds after the use hit Send button
             setOpenWindow(false);
-        }, 2000)
+        }, 3000)
 
     }
 
     return(
-        <>
+        <div className="subs-container">
         {!emailSend &&
         <div className='main-container'>
             <div className='message-container'>
@@ -28,13 +28,14 @@ const Subscribe = ({openWindow, setOpenWindow}) => {
                 </p>
                 </div>
                 <div className='email-input-label'>
-                    <label className='email-input-text'></label>
+                    <label className='email-input-text'>Your email address</label>
                     <input
                     onChange={(input) => setInput(input.target.value)}
                     placeholder="Enter your email address"
                     label={'Input'}
                     type="email"
                     className='email-input'
+                
                     />
                 </div>
                 <div>
@@ -53,11 +54,11 @@ const Subscribe = ({openWindow, setOpenWindow}) => {
         }
 
         {emailSend && <div className='email-container-sent'>
-            <img src={received} style={{ height: '15vh'}}/>
+            <img className='sent-email-img' src={received} style={{ height: '15vh'}}/>
             <h3>Email Received!</h3>
         </div>
         }
-     </>
+     </div>
     )
 }
 
