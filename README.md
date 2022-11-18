@@ -83,6 +83,7 @@ The app is created for fans to search for related information about the show, su
 
  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width=10% height=10%><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width=10% height=10%> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width=10% height=10%><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width=10% height=10%>
 - Axios
+- Vercel
 
 ## Code Snippet
 
@@ -122,6 +123,8 @@ https://www.w3schools.com/html/html_favicon.asp
 https://css-tricks.com/perfect-full-page-background-image/
 - **Debugging help**
 https://react.school/debugging/errors
+- **Animated icon**
+https://lottiefiles.com/
 - ***API resources***
 https://api.tvmaze.com/
 https://agotapi.herokuapp.com
