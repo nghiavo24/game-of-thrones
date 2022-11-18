@@ -43,3 +43,20 @@ a:-webkit-any-link{
     text-decoration: none;
     color: inherit
 }
+.subs-btn{
+}
+.open-subscribe-window{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #C6AC8F;
+    font-size: 1.75em;
+    font-family: 'Cinzel', serif;
+    padding: 0.25em;
+    border-radius: .5em;
+}
+.open-subscribe-window:hover{
+    background-color: white;
+    color: black;
+}
+    
