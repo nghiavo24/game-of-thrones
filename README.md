@@ -18,56 +18,83 @@ The app is created for fans to search for related information about the show, su
 **After:**
 <img src="https://i.imgur.com/a9jOvcp.png">
 
-- [react architecture]()
+**- React Component Hierarchy:**
 
-Define the the React components and the architectural design of your app.
+**Before**
+
+<img src="https://i.imgur.com/ThQPlgo.png">
+
+**After**
+
+<img src="https://i.imgur.com/yhK9n8S.png">
+
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decide what is placed into your MVP as the "client" will expect this functionality to be implemented upon project completion.  
+#### MVP (✅ completed)
 
-#### MVP EXAMPLE
-- Find and use external api 
-- Render data on page 
-- Allow user to interact with the page
+✅ AAU, I want to be able to browse any houses or characters. 
+✅ AAU, I want to be able to see the picture of any house or characters.
+✅ AAU, I want to be able to click on any house or characters and click on it to find out more details about it.
+✅ AAU, I want to be able to get a famous quote from any characters if available. 
 
-#### PostMVP EXAMPLE
-
-- Add localStorage or firebase (or similar) for storage
+#### Post-MVP ( ❗- not completed, ✅ completed)
+❗Add a search component so they can find a specific house or character.
+❗Add OST as background music.
+❗Add a create new component so you can create your own house and characters with their famous quotes.
+✅ Added a comment component so users can post comment and interact with other users.
+✅ Added a subscribe component so users can register their email address to get monthly news.
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 
-Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
 | Component | Description | 
 | --- | :---: |  
-| App | This will make the initial data pull and include React Router| 
-| Header | This will render the header, include the nav | 
-| Footer | This will render the footer, include links to github repo | 
+| App | This will rendered the homepage, including the Navbar & subscribe button.| 
+| About | This initializes an API call and render information the about the show section.  | 
+| Characters | This initializes an API call and render information the about the characters section, including external links to other websites. | 
+| CommentBox | This stores list of comments posted and allow users to post new comments.  | 
+| Episodes | This initializes an API call and render information the about the show's episodes, including external links to other websites. | 
+| Homepage | This contains a picture with hover effect and to be rendered as a homepage in App component. | 
+| Houses | This initializes an API call and render information the about the show's houses, including internal links to the HouseDetails component.  | 
+| House Details | The information is passed down from Houses component and to be filtered and returned with a matched house and display only that house information.  | 
+| Quote | This initializes an API call and render information the about the show characters' quotes, including a button to generate a new quote whenver it is clicked. | 
+| Subscribe | This will pop up a small window for users to enter their email address to received monthly news about the show.  | 
+
 
 ## Time Frames
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the project.  Your estimates can then be used to evaluate project possibilities based on time needed and the actual time you have before the project must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add an additional hour or two to each component to play it safe. 
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: |  :---: | :---: 
+| Planning | H | 3hrs| 9hrs |
+| Working with API | H | 3hrs| 2.5hrs |
+| Adding Components| H | 8hrs| 12hrs |
+| Adding new feature (comment & subscribe) | L | 4hrs| 10hrs |
+| Code Revision | L | 2hrs| 1.5hrs |
+| Debugging | M | 2hrs| 1.5hrs |
+| Deploying | H | 1hrs| 0.5hrs |
+| Documentation | M | 3hrs| 2hrs |
+| Demo video | L | 1hrs| 1.5hrs |
+| Total | H | 27hrs| 40hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and their role in the project such as Axios, ReactStrap, D3, Bootstrap, Tailwind CSS, etc. 
+
+ <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width=10% height=10%><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width=10% height=10%> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width=10% height=10%><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width=10% height=10%>
+- Axios
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  Code snippet should not be greater than 10 lines of code. 
+Conditional rendering - I am glad that I finally be able to understand a bit of it and ultilize this awesome function throughout my project.
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
+`{emailSend && <div className='email-container-sent'>
+            <img className='sent-email-img' src={received} style={{ height: '15vh'}}/>
+            <h3>Email Received!</h3>
+        </div>
 }
-```
+`
+
 
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
