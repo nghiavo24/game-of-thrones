@@ -1,0 +1,21 @@
+.homepage-img{
+    width: 60vw;
+    height: 65vh;
+    border-radius: 2em;
+    position: relative;
+    top: 5%;
+    left: 20vw;
+    padding-top: 1em;
+}
+.color img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 1s ease;
+}
+.color img:hover{
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
