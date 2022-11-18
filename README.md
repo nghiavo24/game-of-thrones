@@ -95,7 +95,6 @@ Conditional rendering - I am glad that I finally be able to understand a bit of 
 }
 ```
 
-v
 
 **ERROR**: Error: Each child in a list should have a unique key prop                              
 **RESOLUTION**: Add a unique key to your list components.
@@ -108,21 +107,21 @@ v
 
 ## Additional resources:
 
-**Help with markdown language**
+- **Help with markdown language**
 https://www.markdownguide.org/extended-syntax/#task-lists
-**Color Palettes**
+- **Color Palettes**
 https://coolors.co/palettes/trending
-**Pictures, wallpapers**
+- **Pictures, wallpapers**
 https://wall.alphacoders.com/big.php?i=1260061
-**Font**
+- **Font**
 https://fonts.google.com/about
-**Help with favicon***
+- **Help with favicon**
 https://www.w3schools.com/html/html_favicon.asp
-**Style background picture**
+- **Style background picture**
 https://css-tricks.com/perfect-full-page-background-image/
-***Debugging help***
+- **Debugging help**
 https://react.school/debugging/errors
-***API resources***
+- ***API resources***
 https://api.tvmaze.com/
 https://agotapi.herokuapp.com
 https://api.gameofthronesquotes.xyz/
