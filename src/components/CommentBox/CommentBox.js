@@ -21,7 +21,7 @@ const handleClick = () => {
                 <div key={index} className="comment-text" >{text}</div>
             ))}
             <div className="comment-flexbox">
-            <h3>Comment</h3>
+            <h2>Comment</h2>
             <textarea 
             value={comment}
             onChange={handleChange}
