@@ -11,19 +11,20 @@ The app is created for fans to search for related information about the show, su
 - [Demo Recording]()
 
 ## Wireframes & React Component Hierarchy
-**- Wireframes**
-**Before:**
+**- Wireframes:**
+- **Before**
 <img src="https://i.imgur.com/zP3fQea.png">
-**After:**
+
+- **After**
 <img src="https://i.imgur.com/a9jOvcp.png">
 
 **- React Component Hierarchy:**
 
-**Before**
+- **Before**
 
 <img src="https://i.imgur.com/ThQPlgo.png">
 
-**After**
+- **After**
 
 <img src="https://i.imgur.com/yhK9n8S.png">
 
