@@ -13,8 +13,6 @@ const handleClick = () => {
     setListOfComments((listOfComments) => [...listOfComments, comment]);
     setComment("")
 }
-
-
     return(
         <div className="main-container">
             {listOfComments.map((text, index)=> (

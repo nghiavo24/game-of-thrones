@@ -34,7 +34,6 @@ const App = () => {
             {openWindow && <Subscribe openWindow={openWindow} setOpenWindow={setOpenWindow} />}
             </div> 
       <div className='color'><img src={homeImg} className='homepage-img'></img></div>
-      
     <Routes>
       <Route path='/houses' element={<Houses />} />
       <Route path='/characters' element={<Characters />} />

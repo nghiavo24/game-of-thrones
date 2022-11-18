@@ -12,9 +12,7 @@ const Subscribe = ({openWindow, setOpenWindow}) => {
         setTimeout(() =>{ //set timer for Subscribe window to close 3 seconds after the use hit Send button
             setOpenWindow(false);
         }, 3000)
-
     }
-
     return(
         <div className="subs-container">
         {!emailSend &&
