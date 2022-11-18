@@ -9,6 +9,7 @@ import Quotes from './components/Quotes/Quotes';
 import CommentBox from './components/CommentBox/CommentBox';
 import Subscribe from './components/Subscribe/Subscribe';
 import { useState } from 'react';
+import homeImg from './images/home-img.jpeg'
 
 const App = () => {
   const[openWindow, setOpenWindow] = useState(false);
@@ -31,8 +32,8 @@ const App = () => {
         <div className='subs-btn'>
             <button onClick={() => {setOpenWindow(!openWindow);}} className='open-subscribe-window'>Subscribe</button>
             {openWindow && <Subscribe openWindow={openWindow} setOpenWindow={setOpenWindow} />}
-            </div>  
-        
+            </div> 
+      <div className='color'><img src={homeImg} className='homepage-img'></img></div>
       
     <Routes>
       <Route path='/houses' element={<Houses />} />
