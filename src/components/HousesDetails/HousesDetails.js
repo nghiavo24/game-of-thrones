@@ -22,13 +22,13 @@ const HousesDetails = () => {
                 <img src={require(`./images/${houseName}.svg`)} alt='' className="house-detail-img"></img>
                 <div className="details">
                     <div className='details-sub-heading'>House {item.name}</div>
-                    <div className='details-sub-heading'>Founder</div>
+                    <div className='details-sub-heading'>Founder:</div>
                     <div className='details-sub-content'>{item.founder}</div>
-                    <div className='details-sub-heading'>Location</div>
+                    <div className='details-sub-heading'>Location:</div>
                     <div className='details-sub-content'>{item.region}</div>
-                    <div className='details-sub-heading'>City</div>
+                    <div className='details-sub-heading'>City:</div>
                     <div className='details-sub-content'>{item.seat}</div>
-                    <div className='details-sub-heading'>Sigil</div>
+                    <div className='details-sub-heading'>Sigil:</div>
                     <div className='details-sub-content'>{item.sigil}</div>
                     <div className='details-sub-heading'>Words:</div>
                     <div className='details-sub-content'>{item.words}</div>

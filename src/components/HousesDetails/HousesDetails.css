@@ -1,5 +1,5 @@
 .houses-detail-main-container{
-    padding: 0.5em;
+    padding: 2em;
 }
 .houses-detail-single-container{
     display: flex;
@@ -14,8 +14,9 @@
     max-width: 40vw;
 }
 .details-sub-heading{
-    font-size: 3em;
+    font-size: 2.5em;
     color: #0A0908;
+    text-decoration: underline;
 }
 .details-sub-content{
     font-size: 1.5em;
