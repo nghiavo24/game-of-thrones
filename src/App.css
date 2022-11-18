@@ -32,6 +32,7 @@ padding: 20px;
     border: 2px solid black;
     padding: 0.25em;
     border-radius: 0.5em;
+    background-color: #C6AC8F;
 }
 .nav-btn:hover{
     background-color: white;

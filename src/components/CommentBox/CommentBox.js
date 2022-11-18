@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './CommentBox.css'
 
 const CommentBox = () => {
 const [comment, setComment] = useState("");
@@ -17,7 +18,7 @@ const handleClick = () => {
     return(
         <div className="main-container">
             {listOfComments.map((text, index)=> (
-                <div key={index} className="comment-container" >{text}</div>
+                <div key={index} className="comment-text" >{text}</div>
             ))}
             <div className="comment-flexbox">
             <h3>Comment</h3>
@@ -25,8 +26,8 @@ const handleClick = () => {
             value={comment}
             onChange={handleChange}
             className="input-box"
-            placeholder="Enter your comment here ..."/>
-            <button onClick={handleClick} className="comment-button">Submit</button>
+            placeholder="Enter your comment here ..."/><br/>
+            <button onClick={handleClick} className="submit-btn">Submit</button>
             </div>
         </div>
     )
